@@ -79,8 +79,6 @@ def usage(code=0, msg=''):
 
 
 def main():
-    if not sys.getwindowsversion().major < 6: # > WinXP or earlier
-       usage(1, _("WinXP only!"))
 
     try:
         opts, args = getopt.getopt(
